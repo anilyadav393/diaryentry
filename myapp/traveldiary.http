@@ -1,0 +1,59 @@
+###
+
+GET  http://localhost:3000/diaryentries/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuaWwxMjM0IiwiaWF0IjoxNzEzMDc3NjQ2fQ.BBM9pF4h4M6rNe_dAkU-Rrn8JRDSWRH5-pvillHx8pk
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"rahul",
+    "username":"rahul123",
+    "password": "rahul@456",
+    "gender": "Male",
+    "location":"hyderabad"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"rahul123",
+    "password": "rahul@456"
+}
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"anil",
+    "username":"anil1234",
+    "password": "anil@1234",
+    "gender": "Male",
+    "location":"kalwakurthy"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"anil1234",
+    "password": "anil@1234"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"akhil1234",
+    "password": "anil@1234"
+}
